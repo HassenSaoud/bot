@@ -17,7 +17,8 @@ TELEGRAM_CHAT_ID = 5550229154  # your user ID
 bot_running = threading.Event()
 API_KEY = ("aYqlaKxzBqwMIyZUicdVU82UOV5pMQnfgd3u2N8wYuXZJ0nTif63xFFU1eFUU8b9")
 API_SECRET = ("ZO1H8UDSZu7QxcyrXo8jReKh3L82Hm7w3lFGhPbsuUFI4pmVD5NwGrWVxiSLB72W")
-
+print("[DEBUG] API_KEY loaded:", API_KEY[:6], "***")
+print("[DEBUG] API_SECRET loaded:", API_SECRET[:6], "***")
 client = Client(API_KEY, API_SECRET)
 client.FUTURES_URL = 'https://fapi.binance.com/fapi'
 
