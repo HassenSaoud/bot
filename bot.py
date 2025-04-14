@@ -12,6 +12,9 @@ from binance.enums import *
 from dotenv import load_dotenv
 
 load_dotenv()
+print("[DEBUG] API_KEY:", API_KEY[:6], "...")  
+print("[DEBUG] API_SECRET:", API_SECRET[:6], "...")
+
 TELEGRAM_TOKEN = '7835448763:AAGy9FH_OX1Q4NL3OaEuxL5jnsLPBwBKdrQ'
 TELEGRAM_CHAT_ID = 5550229154  # your user ID
 bot_running = threading.Event()
