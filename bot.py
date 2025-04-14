@@ -12,10 +12,11 @@ from binance.enums import *
 from dotenv import load_dotenv
 
 load_dotenv()
-
-
 TELEGRAM_TOKEN = '7835448763:AAGy9FH_OX1Q4NL3OaEuxL5jnsLPBwBKdrQ'
 TELEGRAM_CHAT_ID = 5550229154  # your user ID
+from telegram import Bot
+bot = Bot(token=os.getenv("TELEGRAM_TOKEN"))
+TELEGRAM_CHAT_ID = int(os.getenv("TELEGRAM_CHAT_ID"))
 bot_running = threading.Event()
 API_KEY = ("aYqlaKxzBqwMIyZUicdVU82UOV5pMQnfgd3u2N8wYuXZJ0nTif63xFFU1eFUU8b9")
 API_SECRET = ("ZO1H8UDSZu7QxcyrXo8jReKh3L82Hm7w3lFGhPbsuUFI4pmVD5NwGrWVxiSLB72W")
